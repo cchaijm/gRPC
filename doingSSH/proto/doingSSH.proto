@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package doingSSH;
+
+option go_package = "github.com/cchaijm/gRPC/doingSSH/proto";
+
+message SSHServerRequest{
+  string server_username = 1;
+  string server_password = 2;
+  string server_ip = 3;
+  string command =4;
+}
+
+message SSHServerSSHResponse {
+  string result =1;
+}
+
+service doingSSH {
+  rpc SSHServer(SSHServerRequest) returns (SSHServerSSHResponse);
+}
