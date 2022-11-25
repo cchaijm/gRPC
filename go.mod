@@ -1,3 +1,3 @@
-module github.com/chaijm/gRPC/doingSSH
+module github.com/cchaijm/gRPC/doingSSH
 
 go 1.19
